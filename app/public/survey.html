@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey</h1>
+        <hr>
+        <form class="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Image URL</label>
+                <input type="text" class="form-control" id="image" required>
+            </div>
+            <hr>
+            <h2>Select how much you agree with the following statements.</h2>
+            <div class="form-group">
+                <label for="q1" class="lead">Academic achievements are very significant for you.</label>
+                <select id="q1" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q2" class="lead">Your next longterm partner should result in the best sex of your life.</label>
+                <select id="q2" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q3" class="lead">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                <select id="q3" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q4" class="lead">You rarely do something just out of sheer curiosity.</label>
+                <select id="q4" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q5" class="lead">Sleeping with over 100 people makes one a bad person.</label>
+                <select id="q5" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q6" class="lead">It is pretty easy for you to relate to other people's feelings.</label>
+                <select id="q6" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q7" class="lead">Creationism should be taught in schools.</label>
+                <select id="q7" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q8" class="lead">You have a strong artist identity.</label>
+                <select id="q8" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q9" class="lead">Voting is very important to you.</label>
+                <select id="q9" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="q10" class="lead">You feel more energetic after spending time with a group of people.</label>
+                <select id="q10" class="form-control" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br />
+            <button type="button" id="submit" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#modal"><i class="fa fa-check-square" aria-hidden="true"></i> Submit</button>
+        </form>
+        <br />
+        <footer class="footer">
+            <div class="container">
+                <p><a href="../data/friends" target='_blank'>API Friends List</a> | <a href="" target='_blank'>GitHub</a></p>
+            </div>
+        </footer>
+    </div>
+    <div class="modal fade" id="modal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
